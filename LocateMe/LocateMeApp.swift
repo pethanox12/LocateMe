@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct LocateMeApp: App {
+    var bModel = BusinessModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(bModel)
         }
     }
 }
